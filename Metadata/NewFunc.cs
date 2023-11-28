@@ -111,18 +111,18 @@ namespace Metadata
         public enum eXenonColor
         {
             White = 0,
-            Blue,
-            ElectricBlue,
-            MintGreen,
-            Limegreen,
-            Yellow,
-            GoldenShower,
-            Orange,
-            Red,
-            PonyPink,
-            HotPink,
-            Blacklight,
-            Purple
+            Blue = 1,
+            ElectricBlue = 2,
+            MintGreen = 3,
+            Limegreen = 4,
+            Yellow = 5,
+            GoldenShower = 6,
+            Orange = 7,
+            Red = 8,
+            PonyPink = 9,
+            HotPink = 10,
+            Blacklight = 11,
+            Purple = 12
         }
 
         //Dominator Tombstone 
