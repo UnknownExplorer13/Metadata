@@ -74,13 +74,13 @@ namespace Metadata
 			if (!Function.Call<bool>(GTA.Native.Hash.HAS_NAMED_PTFX_ASSET_LOADED, "veh_xs_vehicle_mods"))
 				Function.Call(GTA.Native.Hash.REQUEST_NAMED_PTFX_ASSET, "veh_xs_vehicle_mods");
 
-			if (toggle == true)
+			if (toggle)
 			{
 				//if (!Function.Call<bool>(GTA.Native.Hash._0x36AD3E690DA5ACEB, "CrossLine")) //ANIMPOSTFX_IS_RUNNING                
 				//    Function.Call(GTA.Native.Hash._0x2206BF9A37B7F724, "CrossLine", 0, true); //ANIMPOSTFX_PLAY
 				Function.Call(Hash(0xC8E9B6B71B8E660D), vehicle, toggle, level, power, rechargeTime, disableSound); //_SET_VEHICLE_NITRO_ENABLED           
 			} 
-			if (toggle == false)
+			else
 			{
 				//if (Function.Call<bool>(GTA.Native.Hash._0x36AD3E690DA5ACEB, "CrossLine")) //ANIMPOSTFX_IS_RUNNING               
 				//    Function.Call(GTA.Native.Hash._0x068E835A1D0DC0E3, "CrossLine"); //ANIMPOSTFX_STOP
@@ -90,7 +90,7 @@ namespace Metadata
 
 		public static void SetNitroHudActive(bool toggle)
 		{
-			if (toggle == true)
+			if (toggle)
 			{
 				Function.Call(GTA.Native.Hash._0x808519373FD336A3, true); //_SET_PLAYER_IS_IN_DIRECTOR_MODE
 				Function.Call(Hash(0x1DFEDD15019315A9), toggle); //_SET_ABILITY_BAR_VISIBILITY_IN_MULTIPLAYER
