@@ -19,7 +19,7 @@ namespace Metadata
 
 		public static float GetFloat(this Entity entity, string propertyName)
 		{
-			return Function.Call<float>(Hash._DECOR_GET_FLOAT, entity, propertyName);
+			return Function.Call<float>(Hash.DECOR_GET_FLOAT, entity, propertyName);
 		}
 
 		public static int GetInt(this Entity entity, string propertyName)
@@ -44,7 +44,7 @@ namespace Metadata
 
 		public static void SetFloat(this Entity entity, string propertyName, float value)
 		{
-			Function.Call(Hash._DECOR_SET_FLOAT, entity, propertyName, value);
+			Function.Call(Hash.DECOR_SET_FLOAT, entity, propertyName, value);
 		}
 
 		public static void Register(string propertyName, eDecorType type)

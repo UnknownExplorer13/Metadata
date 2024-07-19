@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Metadata
 {
@@ -6,7 +7,7 @@ namespace Metadata
 	{
 		public static void Log(object message)
 		{
-			System.IO.File.AppendAllText(@".\Metadata.log", DateTime.Now + ":" + message + Environment.NewLine);
+			File.AppendAllText(@".\Metadata.log", DateTime.Now + ":" + message + Environment.NewLine);
 		}
 	}
 }
